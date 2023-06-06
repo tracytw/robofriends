@@ -1,0 +1,50 @@
+@import "./helpers/searchBox";
+@font-face {
+  font-family: "SEGA LOGO FONT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SEGA LOGO FONT"), url("./font-face/SEGA.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, royalblue, green);
+  font-size: 1.5rem;
+}
+
+.title {
+  font-family: "SEGA LOGO FONT";
+  margin: 2rem;
+  color: white;
+  font-weight: 200;
+  text-shadow: 3px 3px 5px red;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid white;
+    margin: 0.7rem;
+    box-shadow: 5px 5px 10px;
+    border-radius: 20px;
+    .robotInfo {
+      background-color: gold;
+      text-align: center;
+      border-radius: 0 0 9px 9px;
+      .infoDetail {
+        margin: 0;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
