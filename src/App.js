@@ -1,26 +1,35 @@
-import React, { Fragment, useState } from "react";
-import CardList from "./components/cardList";
-import SearchBox from "./components/searchBox";
-import { robots } from "./components/robots";
-import Scroll from "./components/scroll";
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import CardList from "./components/CardList";
+import Search from "./components/Search";
+import Scroll from "./components/Scroll";
 
 const App = () => {
+  const [robots, setRobots] = useState([]);
   const [search, setSearch] = useState("");
-  const onSearchChange = (e) => {
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((json) => setRobots(json));
+  }, []);
+
+  const searchChange = (e) => {
     setSearch(e.target.value);
   };
 
-  const filterRobots = robots.filter((result) =>
+  const filterRobot = robots.filter((result) =>
     result.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
-    <Fragment>
-      <SearchBox searchChange={onSearchChange} />
+    <div>
+      <Header />
+      <Search searchChange={searchChange} />
       <Scroll>
-        <CardList robots={filterRobots} />
+        <CardList robots={filterRobot} />
       </Scroll>
-    </Fragment>
+    </div>
   );
 };
 
