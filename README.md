@@ -1,17 +1,14 @@
 ## Features
 
-**Change background color**
-click left/right side "Change Color"
-**Search robot by name**
-input keyword to search specific robot
-**Scroll style in robot list**
-use `{props.children}` as parent component to wrap self-closing component
+- **_Change background color_**: click left/right side "Change Color"
+- **_Search robot by name_**: input keyword to search specific robot
+- **_Scroll style in robot list_**: use `{props.children}` as parent component to wrap self-closing component
 
 ## Sources
 
-**Robot Img** [RoboHash](https://robohash.org/)
-**Robot Info** [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
-**SEGA @font-face** [Sega Logo Font](https://www.cufonfonts.com/font/sega-logo-font)
+- **Robot Img**: [RoboHash](https://robohash.org/)
+- **Robot Info**: [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+- **SEGA @font-face**: [Sega Logo Font](https://www.cufonfonts.com/font/sega-logo-font)
 
 ## Publish GitHub Pages
 
