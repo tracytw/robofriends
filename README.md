@@ -1,8 +1,11 @@
 ## Features
 
-**Change background color** click left/right side `Change Color`
-**Search robot by name** input keyword to search specific robot
-**Scroll style in robot list** use `{props.children}` as parent component to wrap self-closing component
+**Change background color**
+click left/right side "Change Color"
+**Search robot by name**
+input keyword to search specific robot
+**Scroll style in robot list**
+use `{props.children}` as parent component to wrap self-closing component
 
 ## Sources
 
